@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fDaudstu6xtYPURpHwT0Jj7a2V20aNKQAVGzuEGUBdfMUpop7HPXqJGMH8EdS6IckhN9ViXg2tjGJVh7EEsAjQ==",
+  "dgSpecHash": "pHOWsCeSr7TibZsuwl1nTkAMSQ2LSbGekUcE+r35Px8SZdnoW53vNCLguGuaV8G08zMl4nt223mknVn7gTYm1g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Alex\\source\\repos\\Api_2021\\WebApis\\WebApis.csproj",
+  "projectFilePath": "C:\\Users\\Alex\\source\\repos\\Api_2021\\API\\WebApis\\WebApis.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Alex\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Alex\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.11\\microsoft.aspnetcore.cryptography.internal.5.0.11.nupkg.sha512",

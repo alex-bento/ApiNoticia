@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alex\\source\\repos\\Api_2021\\Dominio\\Dominio.csproj",
+      "projectUniqueName": "C:\\Users\\Alex\\source\\repos\\Api_2021\\API\\Dominio\\Dominio.csproj",
       "projectName": "Dominio",
-      "projectPath": "C:\\Users\\Alex\\source\\repos\\Api_2021\\Dominio\\Dominio.csproj",
+      "projectPath": "C:\\Users\\Alex\\source\\repos\\Api_2021\\API\\Dominio\\Dominio.csproj",
       "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alex\\source\\repos\\Api_2021\\Dominio\\obj\\",
+      "outputPath": "C:\\Users\\Alex\\source\\repos\\Api_2021\\API\\Dominio\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Alex\\AppData\\Roaming\\NuGet\\NuGet.Config",

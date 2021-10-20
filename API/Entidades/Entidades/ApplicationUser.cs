@@ -15,7 +15,7 @@ namespace Entidades.Entidades
         public int Idade { get; set; }
 
         [Column("USR_CELULAR")]
-        public int Celular { get; set; }
+        public string Celular { get; set; }
 
         public TipoUsuario? Tipo { get; set; }
     }

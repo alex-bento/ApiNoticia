@@ -6117,11 +6117,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alex\\source\\repos\\Api_2021\\Entidades\\Entidades.csproj",
+      "projectUniqueName": "C:\\Users\\Alex\\source\\repos\\Api_2021\\API\\Entidades\\Entidades.csproj",
       "projectName": "Entidades",
-      "projectPath": "C:\\Users\\Alex\\source\\repos\\Api_2021\\Entidades\\Entidades.csproj",
+      "projectPath": "C:\\Users\\Alex\\source\\repos\\Api_2021\\API\\Entidades\\Entidades.csproj",
       "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alex\\source\\repos\\Api_2021\\Entidades\\obj\\",
+      "outputPath": "C:\\Users\\Alex\\source\\repos\\Api_2021\\API\\Entidades\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Alex\\AppData\\Roaming\\NuGet\\NuGet.Config",

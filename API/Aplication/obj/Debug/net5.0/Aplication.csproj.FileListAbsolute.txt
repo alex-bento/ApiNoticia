@@ -10,3 +10,15 @@ C:\Users\Alex\source\repos\Api_2021\Aplication\obj\Debug\net5.0\Aplication.cspro
 C:\Users\Alex\source\repos\Api_2021\Aplication\obj\Debug\net5.0\Aplication.dll
 C:\Users\Alex\source\repos\Api_2021\Aplication\obj\Debug\net5.0\ref\Aplication.dll
 C:\Users\Alex\source\repos\Api_2021\Aplication\obj\Debug\net5.0\Aplication.pdb
+C:\Users\Alex\source\repos\Api_2021\API\Aplication\bin\Debug\net5.0\Aplication.deps.json
+C:\Users\Alex\source\repos\Api_2021\API\Aplication\bin\Debug\net5.0\Aplication.dll
+C:\Users\Alex\source\repos\Api_2021\API\Aplication\bin\Debug\net5.0\ref\Aplication.dll
+C:\Users\Alex\source\repos\Api_2021\API\Aplication\bin\Debug\net5.0\Aplication.pdb
+C:\Users\Alex\source\repos\Api_2021\API\Aplication\obj\Debug\net5.0\Aplication.csproj.AssemblyReference.cache
+C:\Users\Alex\source\repos\Api_2021\API\Aplication\obj\Debug\net5.0\Aplication.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alex\source\repos\Api_2021\API\Aplication\obj\Debug\net5.0\Aplication.AssemblyInfoInputs.cache
+C:\Users\Alex\source\repos\Api_2021\API\Aplication\obj\Debug\net5.0\Aplication.AssemblyInfo.cs
+C:\Users\Alex\source\repos\Api_2021\API\Aplication\obj\Debug\net5.0\Aplication.csproj.CoreCompileInputs.cache
+C:\Users\Alex\source\repos\Api_2021\API\Aplication\obj\Debug\net5.0\Aplication.dll
+C:\Users\Alex\source\repos\Api_2021\API\Aplication\obj\Debug\net5.0\ref\Aplication.dll
+C:\Users\Alex\source\repos\Api_2021\API\Aplication\obj\Debug\net5.0\Aplication.pdb

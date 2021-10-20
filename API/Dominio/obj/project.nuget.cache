@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "goFBxQiDPNCvKapvUEv91Xz2GHSqiBKnPpQOlUQiTT1su03u9naZ7fLeEN8bEryBzXQmkjQrAEaLf3jNDvgLmQ==",
+  "dgSpecHash": "8Yr9wuzKWB+D6slOuFjKEO06sGn5kAcRTUlATB6XNYlTBVmtAbhvS6zK03Y16P3uHtcnphIJV1vdSb6joDGQ5A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Alex\\source\\repos\\Api_2021\\Dominio\\Dominio.csproj",
+  "projectFilePath": "C:\\Users\\Alex\\source\\repos\\Api_2021\\API\\Dominio\\Dominio.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -6298,11 +6298,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alex\\source\\repos\\Api_2021\\WebApis\\WebApis.csproj",
+      "projectUniqueName": "C:\\Users\\Alex\\source\\repos\\Api_2021\\API\\WebApis\\WebApis.csproj",
       "projectName": "WebApis",
-      "projectPath": "C:\\Users\\Alex\\source\\repos\\Api_2021\\WebApis\\WebApis.csproj",
+      "projectPath": "C:\\Users\\Alex\\source\\repos\\Api_2021\\API\\WebApis\\WebApis.csproj",
       "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alex\\source\\repos\\Api_2021\\WebApis\\obj\\",
+      "outputPath": "C:\\Users\\Alex\\source\\repos\\Api_2021\\API\\WebApis\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Alex\\AppData\\Roaming\\NuGet\\NuGet.Config",

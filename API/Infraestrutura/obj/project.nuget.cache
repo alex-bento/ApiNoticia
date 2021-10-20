@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "r2EOX3tDWoMa6sHuSB05d4MBjPVg4OsRklszsOCeH/OxYP0wRcPopeBjmuy4DNeUaeqb7jFjnEaGVv0T3Tf05Q==",
+  "dgSpecHash": "RrNNkJRJjloJgOtci1F0w8wClmO2vtGfLbv0MBDiXoFPlJvJSktX8P8zW/P8EjXWzQIakO/nu6CaqoskvOnVxg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Alex\\source\\repos\\Api_2021\\Infraestrutura\\Infraestrutura.csproj",
+  "projectFilePath": "C:\\Users\\Alex\\source\\repos\\Api_2021\\API\\Infraestrutura\\Infraestrutura.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Alex\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Alex\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.11\\microsoft.aspnetcore.cryptography.internal.5.0.11.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QWOwj4eW0E4xnOzLT25CjDKAfeWCU2ED9BREp/JnRWT4FBw8f/RQfpU6fqlpbY+FujR6GYU8124WERyEhC03kw==",
+  "dgSpecHash": "0cnQ31V0LFj5aDJAb42tK5qxEJNHEEOHhiSurawecAel3mcBM9neyW5S79yuKVxEph0BeA1Hn2JBdEz9OoI03A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Alex\\source\\repos\\Api_2021\\Aplication\\Aplication.csproj",
+  "projectFilePath": "C:\\Users\\Alex\\source\\repos\\Api_2021\\API\\Aplication\\Aplication.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
