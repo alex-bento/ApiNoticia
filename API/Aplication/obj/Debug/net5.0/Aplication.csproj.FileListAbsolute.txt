@@ -22,3 +22,10 @@ C:\Users\Alex\source\repos\Api_2021\API\Aplication\obj\Debug\net5.0\Aplication.c
 C:\Users\Alex\source\repos\Api_2021\API\Aplication\obj\Debug\net5.0\Aplication.dll
 C:\Users\Alex\source\repos\Api_2021\API\Aplication\obj\Debug\net5.0\ref\Aplication.dll
 C:\Users\Alex\source\repos\Api_2021\API\Aplication\obj\Debug\net5.0\Aplication.pdb
+C:\Users\Alex\source\repos\Api_2021\API\Aplication\bin\Debug\net5.0\Dominio.dll
+C:\Users\Alex\source\repos\Api_2021\API\Aplication\bin\Debug\net5.0\Entidades.dll
+C:\Users\Alex\source\repos\Api_2021\API\Aplication\bin\Debug\net5.0\Infraestrutura.dll
+C:\Users\Alex\source\repos\Api_2021\API\Aplication\bin\Debug\net5.0\Entidades.pdb
+C:\Users\Alex\source\repos\Api_2021\API\Aplication\bin\Debug\net5.0\Infraestrutura.pdb
+C:\Users\Alex\source\repos\Api_2021\API\Aplication\bin\Debug\net5.0\Dominio.pdb
+C:\Users\Alex\source\repos\Api_2021\API\Aplication\obj\Debug\net5.0\Aplication.csproj.CopyComplete
