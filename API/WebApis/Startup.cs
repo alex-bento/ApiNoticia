@@ -1,15 +1,29 @@
+using Aplication.Aplicações;
+using Aplication.Interfaces;
+using Dominio.Interface.Genericos;
+using Dominio.Interface.InterfaceServices;
+using Entidades.Entidades;
+using Infraestrutura.Configurações;
+using Infraestrutura.Interface;
+using Infraestrutura.Repositorio;
+using Infraestrutura.Repositorio.Genericos;
+using Infraestrutura.Servico;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using WebApis.Token;
 
 namespace WebApis
 {
@@ -25,6 +39,60 @@ namespace WebApis
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
+            services.AddDbContext<Contexto>(options =>
+            options.UseSqlServer(
+                Configuration.GetConnectionString("DefaultConnection")));
+
+            services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = false)
+                .AddEntityFrameworkStores<Contexto>();
+
+            // Interface e Repositorio
+
+            services.AddSingleton(typeof(IGenericos<>), typeof(RepositorioGnerico<>));
+            services.AddSingleton<INoticia, RpositorioNoticia>();
+            services.AddSingleton<IUsuario, RepositorioUsuario>();
+
+            // Serviçps Dominio
+            services.AddSingleton<IServicoNoticias, ServicoNoticia>();
+
+            // Interface da Aplicação
+            services.AddSingleton<IAplicacaoNoticia, AplicacaoNoticia>();
+            services.AddSingleton<IAplicacaoUsuario, AplicacaoUsuario>();
+
+            // Gerar o Token
+
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+       .AddJwtBearer(option =>
+       {
+           option.TokenValidationParameters = new TokenValidationParameters
+           {
+               ValidateIssuer = false,
+               ValidateAudience = false,
+               ValidateLifetime = true,
+               ValidateIssuerSigningKey = true,
+
+               // Colocar informações da sua empresa 
+               ValidIssuer = "Teste.Securiry.Bearer",
+               ValidAudience = "Teste.Securiry.Bearer",
+               IssuerSigningKey = JwtSecurityKey.Create("Secret_Key-12345678")
+           };
+
+           option.Events = new JwtBearerEvents
+           {
+               OnAuthenticationFailed = context =>
+               {
+                   Console.WriteLine("OnAuthenticationFailed: " + context.Exception.Message);
+                   return Task.CompletedTask;
+               },
+               OnTokenValidated = context =>
+               {
+                   Console.WriteLine("OnTokenValidated: " + context.SecurityToken);
+                   return Task.CompletedTask;
+               }
+           };
+       });
+
 
             services.AddControllers();
             services.AddSwaggerGen(c =>

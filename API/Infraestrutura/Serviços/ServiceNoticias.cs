@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Infraestrutura.Serviços
+namespace Infraestrutura.Servicos
 {
     class ServiceNoticias : IServicoNoticias
     {

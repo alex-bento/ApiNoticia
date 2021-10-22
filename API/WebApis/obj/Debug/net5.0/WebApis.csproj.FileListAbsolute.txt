@@ -101,7 +101,6 @@ C:\Users\Alex\source\repos\Api_2021\API\WebApis\bin\Debug\net5.0\Microsoft.Ident
 C:\Users\Alex\source\repos\Api_2021\API\WebApis\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\Alex\source\repos\Api_2021\API\WebApis\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\Alex\source\repos\Api_2021\API\WebApis\bin\Debug\net5.0\Microsoft.OpenApi.dll
-C:\Users\Alex\source\repos\Api_2021\API\WebApis\bin\Debug\net5.0\Newtonsoft.Json.dll
 C:\Users\Alex\source\repos\Api_2021\API\WebApis\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\Alex\source\repos\Api_2021\API\WebApis\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\Alex\source\repos\Api_2021\API\WebApis\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -138,3 +137,12 @@ C:\Users\Alex\source\repos\Api_2021\API\WebApis\obj\Debug\net5.0\WebApis.dll
 C:\Users\Alex\source\repos\Api_2021\API\WebApis\obj\Debug\net5.0\ref\WebApis.dll
 C:\Users\Alex\source\repos\Api_2021\API\WebApis\obj\Debug\net5.0\WebApis.pdb
 C:\Users\Alex\source\repos\Api_2021\API\WebApis\obj\Debug\net5.0\WebApis.genruntimeconfig.cache
+C:\Users\Alex\source\repos\Api_2021\API\WebApis\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Alex\source\repos\Api_2021\API\WebApis\bin\Debug\net5.0\Aplication.dll
+C:\Users\Alex\source\repos\Api_2021\API\WebApis\bin\Debug\net5.0\Dominio.dll
+C:\Users\Alex\source\repos\Api_2021\API\WebApis\bin\Debug\net5.0\Entidades.dll
+C:\Users\Alex\source\repos\Api_2021\API\WebApis\bin\Debug\net5.0\Infraestrutura.dll
+C:\Users\Alex\source\repos\Api_2021\API\WebApis\bin\Debug\net5.0\Aplication.pdb
+C:\Users\Alex\source\repos\Api_2021\API\WebApis\bin\Debug\net5.0\Dominio.pdb
+C:\Users\Alex\source\repos\Api_2021\API\WebApis\bin\Debug\net5.0\Infraestrutura.pdb
+C:\Users\Alex\source\repos\Api_2021\API\WebApis\bin\Debug\net5.0\Entidades.pdb
