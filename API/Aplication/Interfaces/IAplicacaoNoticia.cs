@@ -12,6 +12,6 @@ namespace Aplication.Interfaces
     {
         Task AdicionaNoticia(Noticia noticia);
         Task AtualizaNoticia(Noticia noticia);
-        Task<List<Noticia>> ListarNoticiaAtiva(Noticia noticia);
+        Task<List<Noticia>> ListarNoticiaAtiva();
     }
 }

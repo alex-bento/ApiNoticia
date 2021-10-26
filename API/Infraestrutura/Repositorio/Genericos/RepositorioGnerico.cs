@@ -37,7 +37,7 @@ namespace Infraestrutura.Repositorio.Genericos
             }
         }
 
-        public async Task<T> BuscarPorId(T Id)
+        public async Task<T> BuscarPorId(int Id)
         {
             using (var data = new Contexto(_OptionsBuilder))
             {

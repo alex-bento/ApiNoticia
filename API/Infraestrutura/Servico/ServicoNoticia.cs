@@ -44,7 +44,7 @@ namespace Infraestrutura.Servico
             }
         }
 
-        public async Task<List<Noticia>> ListarNoticiaAtiva(Noticia noticia)
+        public async Task<List<Noticia>> ListarNoticiaAtiva()
         {
             return await _INoticia.ListarNoticias(n => n.Ativo);
         }

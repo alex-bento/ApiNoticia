@@ -30,9 +30,9 @@ namespace Aplication.Aplicações
             await _IServicoNoticias.AtualizaNoticia(noticia);
         }
 
-        public async Task<List<Noticia>> ListarNoticiaAtiva(Noticia noticia)
+        public async Task<List<Noticia>> ListarNoticiaAtiva()
         {
-            return await _IServicoNoticias.ListarNoticiaAtiva(noticia);
+            return await _IServicoNoticias.ListarNoticiaAtiva();
         }
 
 
@@ -46,7 +46,7 @@ namespace Aplication.Aplicações
             await _INoticia.Atualizar(Objeto);
         }
 
-        public async Task<Noticia> BuscarPorId(Noticia Id)
+        public async Task<Noticia> BuscarPorId(int Id)
         {
             return await _INoticia.BuscarPorId(Id);
         }

@@ -12,5 +12,9 @@ namespace Infraestrutura.Interface
 
         // Verificar se existe o usuario
         Task<bool> ExisteUsuario(string email, string senha);
+
+        Task<string> RetornaIdUsuario(string email);
+
+
     }
 }

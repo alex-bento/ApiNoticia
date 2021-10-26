@@ -11,6 +11,6 @@ namespace Dominio.Interface.InterfaceServices
     {
         Task AdicionaNoticia(Noticia noticia);
         Task AtualizaNoticia(Noticia noticia);
-        Task<List<Noticia>> ListarNoticiaAtiva(Noticia noticia);
+        Task<List<Noticia>> ListarNoticiaAtiva();
     }
 }

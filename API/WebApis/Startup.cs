@@ -113,7 +113,10 @@ namespace WebApis
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
+
+           
 
             app.UseEndpoints(endpoints =>
             {

@@ -24,7 +24,8 @@ namespace WebApis.Controllers
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
 
-        public UsuarioController(IAplicacaoUsuario IAplicacaoUsuario, UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager)
+        public UsuarioController(IAplicacaoUsuario IAplicacaoUsuario, UserManager<ApplicationUser> userManager,
+        SignInManager<ApplicationUser> signInManager)
         {
             _IAplicacaoUsuario = IAplicacaoUsuario;
             _userManager = userManager;
@@ -48,12 +49,13 @@ namespace WebApis.Controllers
 
             if (resultado)
             {
+                var idUsuario = await _IAplicacaoUsuario.RetornaIdUsuario(login.email);
                 var token = new TokenJWTBuilder()
                     .AddSecurityKey(JwtSecurityKey.Create("Secret_Key-12345678"))
                     .AddSubject("Empresa - Aprendendo Dev Net Core")
                     .AddIssuer("Teste.Securiry.Bearer")
                     .AddAudience("Teste.Securiry.Bearer")
-                    .AddClaim("UsuarioApiNumero", "1")
+                    .AddClaim("idUsuario", idUsuario)
                     .AddExpiry(5)
                     .Builder();
 
@@ -64,9 +66,10 @@ namespace WebApis.Controllers
                 return Unauthorized();
             }
         }
+
         [AllowAnonymous]
         [Produces("application/json")]
-        [HttpPost("/Api/AdicionarUsuario")]
+        [HttpPost("/api/AdicionarUsuario")]
         public async Task<IActionResult> AdicionarUsuario([FromBody] Login login)
         {
             if (string.IsNullOrWhiteSpace(login.email) || string.IsNullOrWhiteSpace(login.senha))
@@ -75,7 +78,7 @@ namespace WebApis.Controllers
                 //return Unauthorized();
             }
 
-            var resultado = await 
+            var resultado = await
                 _IAplicacaoUsuario.AdicionarUsuario(login.email, login.senha, login.idade, login.celular);
 
             if (resultado)
@@ -99,16 +102,18 @@ namespace WebApis.Controllers
                 return Unauthorized();
             }
 
-            var resultado = await _signInManager.PasswordSignInAsync(login.email, login.senha, false, lockoutOnFailure: false);
+            var resultado = await
+                _signInManager.PasswordSignInAsync(login.email, login.senha, false, lockoutOnFailure: false);
 
             if (resultado.Succeeded)
             {
+                var idUsuario = await _IAplicacaoUsuario.RetornaIdUsuario(login.email);
                 var token = new TokenJWTBuilder()
                     .AddSecurityKey(JwtSecurityKey.Create("Secret_Key-12345678"))
                     .AddSubject("Empresa - Aprendendo Dev Net Core")
                     .AddIssuer("Teste.Securiry.Bearer")
                     .AddAudience("Teste.Securiry.Bearer")
-                    .AddClaim("UsuarioApiNumero", "1")
+                    .AddClaim("idUsuario", idUsuario)
                     .AddExpiry(5)
                     .Builder();
 
@@ -135,7 +140,7 @@ namespace WebApis.Controllers
                 UserName = login.email,
                 Email = login.email,
                 Celular = login.celular,
-                Tipo = TipoUsuario.Comum
+                Tipo = TipoUsuario.Comum,
             };
 
             var resultado = await _userManager.CreateAsync(user, login.senha);
@@ -155,7 +160,7 @@ namespace WebApis.Controllers
 
             code = Encoding.UTF8.GetString(WebEncoders.Base64UrlDecode(code));
             var resultado2 = await _userManager.ConfirmEmailAsync(user, code);
-            
+
             if (resultado2.Succeeded)
             {
                 return Ok("Usuário adicionado com sucesso");
@@ -165,9 +170,10 @@ namespace WebApis.Controllers
                 return Ok("Error ao confirmar o usuário");
             }
 
-            
+
         }
 
+        // Informação Para adicionar um Usuario tem quer ter pelo menos uma Caracter especial
 
     }
 }

@@ -67,5 +67,29 @@ namespace Infraestrutura.Repositorio
 
             return true;
         }
+
+        //Verificar se tem um email no bancos de dados
+
+        public async Task<string> RetornaIdUsuario(string email)
+        {
+            try
+            {
+                using (var data = new Contexto(_optionsBuilder))
+                {
+                    var usuario = await data.ApplicationUser
+                        .Where(u => u.Email.Equals(email))
+                        .AsNoTracking()
+                        .FirstOrDefaultAsync();
+
+                    return usuario.Id;
+
+                }
+            }
+            catch (Exception)
+            {
+
+                return string.Empty;
+            }
+        }
     }
 }
