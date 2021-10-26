@@ -105,10 +105,21 @@ namespace WebApis
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
 
-            var urlCliente1 = "https://dominiodocliente.com.br";
-            var urlCliente2 = "https://dominiodocliente2.com.br";
+            //var urlCliente1 = "https://dominiodocliente.com.br";
+            //var urlCliente2 = "https://dominiodocliente2.com.br";
 
-            app.UseCors(builder => builder.WithOrigins(urlCliente1, urlCliente2));
+            //app.UseCors(builder => builder.WithOrigins(urlCliente1, urlCliente2));
+
+            #region Novo
+            var urlCliente1 = "http://localhost:4200";
+            app.UseCors(x => x
+                .AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader()
+                .WithOrigins(urlCliente1));
+            #endregion
+
+            app.UseHttpsRedirection();
 
             if (env.IsDevelopment())
             {
@@ -122,7 +133,7 @@ namespace WebApis
             app.UseAuthentication();
             app.UseAuthorization();
 
-           
+
 
             app.UseEndpoints(endpoints =>
             {
