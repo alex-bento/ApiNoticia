@@ -1,4 +1,4 @@
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
@@ -8,7 +8,9 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './Pages/login/login.component';
 import { NoticiasComponent } from './Pages/noticias/noticias.component';
 import { NavbarComponent } from './Components/navbar/navbar.component';
+import { Interceptor } from './Interceptor/intercerotir';
 
+const serviceAutentica = [Interceptor];
 
 @NgModule({
   declarations: [
@@ -23,7 +25,10 @@ import { NavbarComponent } from './Components/navbar/navbar.component';
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [
+    serviceAutentica,
+    {provide: HTTP_INTERCEPTORS, useClass: Interceptor, multi: true}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

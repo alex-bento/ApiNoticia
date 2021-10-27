@@ -25,7 +25,7 @@ namespace WebApis.Controllers
         // So vai se entrar nesse metado quem tiver o token de acessso
         [Authorize]
         [Produces("application/json")]
-        [HttpGet("/api/ListarNoticias")]
+        [HttpPost("/api/ListarNoticias")]
         public async Task<List<Noticia>> ListarNoticias()
         {
             return await _IAplicacaoNoticia.ListarNoticiaAtiva();
@@ -53,7 +53,7 @@ namespace WebApis.Controllers
 
         [Authorize]
         [Produces("application/json")]
-        [HttpPut("/api/AtualizaNoticia")]
+        [HttpPost("/api/AtualizaNoticia")]
         public async Task<List<Notifica>> AtualizaNoticia(NoticiaModel noticia)
         {
             var noticiaNova = await _IAplicacaoNoticia.BuscarPorId(noticia.IdNoticia);
@@ -72,7 +72,7 @@ namespace WebApis.Controllers
 
         [Authorize]
         [Produces("application/json")]
-        [HttpDelete("/api/ExcluirNoticia")]
+        [HttpPost("/api/ExcluirNoticia")]
         public async Task<List<Notifica>> ExcluirNoticia(NoticiaModel noticia)
         {
             var noticiaNova = await _IAplicacaoNoticia.BuscarPorId(noticia.IdNoticia);
@@ -85,7 +85,7 @@ namespace WebApis.Controllers
 
         [Authorize]
         [Produces("application/json")]
-        [HttpGet("/api/BuscarPorId")]
+        [HttpPost("/api/BuscarPorId")]
         public async Task<Noticia> BuscarPorId(NoticiaModel noticia)
         {
             var noticiaNova = await _IAplicacaoNoticia.BuscarPorId(noticia.IdNoticia);

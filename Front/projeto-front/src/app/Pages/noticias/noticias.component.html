@@ -2,18 +2,18 @@
 
 <div class="conteudoNoticias">
     <div class="listanoticias">
-        <ng-container *ngFor="let item of listaNoticias">
+        <ng-container *ngFor="let item of noticias">
             <div class="noticia">
                 <div class="cabecalhoNoticia">
                     <div class="dataNoticia">
-                        Date: 26/10/2021
+                        Date: {{item.dataCadastro}}
                     </div>
                     <div class="usuarioNoticia">
-                        Alex de Melo Bento
+                        {{item.titulo}}
                     </div>
                 </div>
                 <div class="textoNoticia">
-                    Esta é minha noticia que cirei pela API para estudo.Esta é minha noticia que cirei pela API para estudo.Esta é minha noticia que cirei pela API para estudo.Esta é minha noticia que cirei pela API para estudo.Esta é minha noticia que cirei pela API para estudo.Esta é minha noticia que cirei pela API para estudo.Esta é minha noticia que cirei pela API para estudo.
+                    {{item.informacao}}
                 </div>    
             </div>
         </ng-container>
