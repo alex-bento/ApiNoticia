@@ -13,5 +13,7 @@ namespace Infraestrutura.Interface
     {
         // Coloquei uma expressão
         Task<List<Noticia>> ListarNoticias(Expression<Func<Noticia, bool>> exNoticia);
+
+        Task<List<Noticia>> ListarNoticiasCustomizado();
     }
 }

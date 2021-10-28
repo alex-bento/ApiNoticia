@@ -1,5 +1,6 @@
 using Aplication.Interfaces;
 using Entidades.Entidades;
+using Entidades.Entidades.ViewModels;
 using Entidades.Noticia;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -22,6 +23,16 @@ namespace WebApis.Controllers
         {
             _IAplicacaoNoticia = IAplicacaoNoticia;
         }
+
+        [Authorize]
+        [Produces("application/json")]
+        [HttpPost("/api/ListarNoticiaCustomizada")]
+        public async Task<List<NoticiaViewModel>> ListarNoticiaCustomizada()
+        {
+            return await _IAplicacaoNoticia.ListarNoticiaCustomizada();
+        }
+
+
         // So vai se entrar nesse metado quem tiver o token de acessso
         [Authorize]
         [Produces("application/json")]

@@ -1,6 +1,7 @@
 ﻿using Aplication.Interfaces;
 using Dominio.Interface.InterfaceServices;
 using Entidades.Entidades;
+using Entidades.Entidades.ViewModels;
 using Infraestrutura.Interface;
 using System;
 using System.Collections.Generic;
@@ -35,6 +36,11 @@ namespace Aplication.Aplicações
             return await _IServicoNoticias.ListarNoticiaAtiva();
         }
 
+        public async Task<List<NoticiaViewModel>> ListarNoticiaCustomizada()
+        {
+            return await _IServicoNoticias.ListarNoticiaCustomizada();
+        }
+
 
         public async Task Adicionar(Noticia Objeto)
         {
@@ -61,6 +67,6 @@ namespace Aplication.Aplicações
             return await _INoticia.Listar();
         }
 
-        
+       
     }
 }
